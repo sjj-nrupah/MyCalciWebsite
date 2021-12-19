@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+    <script src="calci.js"></script>
+</head>
+<body>
+    <div class="heading">Calculator</div>
+    <div class="mid">
+        <ul class="inputbox">
+            <li>
+                <label for="Num1" class="ipbox" id="lab1">Enter first number :</label>
+                <input type="text" id="num1" name="Num1" class="ipin">
+            </li>
+            <li>
+                <label for="Num2" class="ipbox" id="lab2">Enter second number :</label>
+                <input type="text" id="num2" name="Num2" class="ipin">
+            </li>
+        </ul>
+        <ul class="notyetmade">
+            <li>
+                <input type="button" id="clearval" value="AC" class="notyetbutton" onclick="clearval()" title="Clear Values">
+            </li>
+            <li>
+                <input type="button" id="onevalue" value="Single Number" class="notyetbutton" onclick="oneval()" title="Input only one number">
+            </li>
+            <li>
+                <input type="button" id="multivalue" value="More numbers" class="notyetbutton" onclick="multival()" title="Input more than two numbers">
+            </li>
+            <li>
+                <input type="button" id="twovalue" value="Two numbers" class="notyetbutton" onclick="twoval()" title="Input two numbers">
+            </li>
+        </ul>
+        <ul class="menu">
+            <select class="menuop">
+                <option>Standard</option>
+                <option>Scientific</option>
+                <option>Unit Converter</option>
+                <option>History</option>
+            </select>
+        </ul>
+        <ul class="button1">
+            <li>
+                <input type="button" id="add" value="ADD" class="button1in" onclick="readVal(add);" title="ADDITION">
+            </li>
+            <li>
+                <input type="button" id="sub" value="SUBTRACT" class="button1in" onclick="readVal(sub);" title="SUBTRACTION">
+            </li>
+            <li>
+                <input type="button" id="multi" value="MULTIPLY" class="button1in" onclick="readVal(multi);" title="MULTIPLICATION">
+            </li>
+            <li>
+                <input type="button" id="divide" value="DIVIDE" class="button1in" onclick="readVal(divide);" title="DIVISION">
+            </li>
+            <li>
+                <input type="button" id="quot" value="DIVIDE FOR QUOTIENT" class="button1in" onclick="readVal(quot);" title="QUOTIENT">
+            </li>
+            <li>
+                <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="REMAINDER">
+            </li>
+        </ul>
+        <div class="result">
+            <div id="resulthead">Result</div>
+            <div id="resultline">
+               <div id="ht">2323232</div>
+            </div>
+           <div class="clrres"><input type="button" value="Clear Result" id="clrslt" onclick="clearResult();" title="Clear Result"></div>
+        </div>
+    </div>
+    <div class="footer">
+		<div id="Nrupah">@Nrupah</div>
+		<div>Made by SJJ</div>
+	</div>
+</body>
+</html>
