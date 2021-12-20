@@ -212,6 +212,6 @@ input[type=disabled]{
 }
 .singlebutton{
     float: left;
-    width: 25%;
+    width: 20%;
     position: relative;
 }
