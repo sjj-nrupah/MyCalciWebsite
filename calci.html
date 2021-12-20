@@ -9,8 +9,12 @@
     <script src="JS/calci.js"></script>
 </head>
 <body>
-    <div class="heading">Calculator</div>
+    <div class="heading">
+        Calculator
+    </div>
+
     <div class="mid">
+
         <ul class="inputbox">
             <li>
                 <label for="Num1" class="ipbox" id="lab1">Enter first number :</label>
@@ -23,6 +27,7 @@
             </li>
             <div class="incmplterr" id="err2">Enter this value</div>
         </ul>
+
         <ul class="notyetmade">
             <li>
                 <input type="button" id="clearval" value="AC" class="notyetbutton" onclick="clearval()" title="Clear Values">
@@ -37,6 +42,7 @@
                 <input type="button" id="twovalue" value="Two numbers" class="notyetbutton" onclick="twoval()" title="Input two numbers">
             </li>
         </ul>
+
         <ul class="menu">
             <select class="menuop" onchange="showDialog()">
                 <option>Standard</option>
@@ -45,6 +51,7 @@
                 <option>History</option>
             </select>
         </ul>
+
         <ul class="button1">
             <li>
                 <input type="button" id="add" value="ADD" class="button1in" onclick="readVal(add);" title="ADDITION">
@@ -64,6 +71,9 @@
             <li>
                 <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="REMAINDER">
             </li>
+            <div class="hider">
+
+            </div>
         </ul>
 
         <div class="maskBlock">
@@ -89,7 +99,9 @@
             </div>
            <div class="clrres"><input type="button" value="Clear Result" id="clrslt" onclick="clearResult();" title="Clear Result"></div>
         </div>
+
     </div>
+
     <div class="footer">
 		<div id="Nrupah">@Nrupah</div>
 		<div>&copy;SJJ</div>

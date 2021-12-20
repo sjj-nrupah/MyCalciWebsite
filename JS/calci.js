@@ -114,8 +114,8 @@ function oneval() {
     document.querySelector("#lab1").innerText="Enter the value : ";
     document.querySelector("#lab1").style.fontSize="25px";
     document.querySelector("#onevalue").style.display="none";
-    userip.num2=0;
-    console.log(userip.num2);
+    document.querySelector("#num2").setAttribute("value","0");
+    document.querySelector(".hider").style.display = "block";
 }
 
 //Multiple Value Calculations
