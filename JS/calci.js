@@ -6,10 +6,35 @@ var readVal = (op) => {
     userip.num1=document.querySelector("#num1").value;
     userip.num2=document.querySelector("#num2").value;
 
-    if(userip.num1=="" || userip.num2==""){
-        alert("Enter both the values");
+    if(userip.num1=="" && userip.num2==""){
+        err1();
+        err2();
+        document.querySelector(".inputbox").style.height = "110px";
         return;
-    };
+    }
+    else{
+        document.querySelector("#err1").style.display = "none";
+        document.querySelector("#err2").style.display = "none";
+        document.querySelector(".inputbox").style.height = "65px";
+    }
+
+    if(userip.num1=="") {
+        err1();
+        return;
+    }
+    else{
+        document.querySelector("#err1").style.display = "none";
+        document.querySelector(".inputbox").style.height = "65px";
+    }
+
+    if(userip.num2=="") {
+        err2();
+        return;
+    }
+    else{
+        document.querySelector("#err2").style.display = "none";
+        document.querySelector(".inputbox").style.height = "65px";
+    }
 
     userip.num1=parseInt(userip.num1);
     userip.num2=parseInt(userip.num2);
@@ -113,3 +138,13 @@ var clearResult = () => {
 /*var myDate = new Date();
 myDate=myDate.getDate();
 document.querySelector("#Nrupah").innerHTML = "Date : "+myDate;*/
+
+var err1 = () => {
+    document.querySelector("#err1").style.display = "block";
+    document.querySelector(".inputbox").style.height = "90px";
+}
+
+var err2 = () => {
+    document.querySelector("#err2").style.display = "block";
+    document.querySelector(".inputbox").style.height = "90px";
+}

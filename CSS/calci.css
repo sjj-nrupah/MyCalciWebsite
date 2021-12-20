@@ -13,7 +13,7 @@ li{
 }
 .inputbox{
     border: 3px solid black;
-    height: 65px;
+    height: 65px; /*90px&105px;*/
     padding: 4px;
     width: 400px;
     float: left;
@@ -113,6 +113,7 @@ input[type="button"]{
     width: 500px;
     text-align: center;
     font-weight: bold;
+    margin: 30px auto;
 }
 #resulthead{
     font-size: 40px;
@@ -131,4 +132,15 @@ input[type="button"]{
 }
 #clrslt:hover{
     background-color: white;
+}
+.incmplterr{
+    padding: 4px;
+    margin: 4px;
+    color: red;
+}
+#err1{
+    display: none;
+}
+#err2{
+    display: none;
 }
