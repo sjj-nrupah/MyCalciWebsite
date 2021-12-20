@@ -54,10 +54,12 @@ li{
    clear: both;
    position: relative;
    width: 25%;
+   float: left;
 }
 .button1in{
     margin: 5px;
     background-color: tomato;
+    border-radius: 3px;
 }
 .button1in:hover{
     background-color: chocolate;
@@ -110,6 +112,7 @@ input[type="button"]{
     border: 2px solid black;
 }
 .result{
+    clear: both;
     border: 4px solid black;
     height: 150px;
     width: 500px;
@@ -206,4 +209,9 @@ input[type="button"]{
 }
 input[type=disabled]{
     cursor: no-drop;
+}
+.singlebutton{
+    float: left;
+    width: 50%;
+    position: relative;
 }
