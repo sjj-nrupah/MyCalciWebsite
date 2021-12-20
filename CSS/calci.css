@@ -204,3 +204,6 @@ input[type="button"]{
     background-color: violet;
     opacity: 0.4;
 }
+input[type=disabled]{
+    cursor: no-drop;
+}

@@ -109,15 +109,26 @@ function oneval() {
     document.querySelector("#lab1").style.top="15px";
     document.querySelector("#lab1").innerText="Enter the value : ";
     document.querySelector("#lab1").style.fontSize="25px";
-    document.querySelector("#onevalue").style.display="none";
+    document.querySelector("#onevalue").setAttribute("type","disabled");
     document.querySelector("#num2").setAttribute("value","0");
     document.querySelector(".hider").style.display = "block";
+    document.querySelector("#twovalue").setAttribute("type","button");
 }
 
 //Make it
 //Multiple Value Calculations
 var multival = () => {
     showDialog();
+}
+
+//Make it
+//Back to two values
+var twoval = () => {
+    document.querySelector(".hider").style.display = "none";
+    document.querySelector("#num2").style.display="block";
+    document.querySelector("#lab2").style.display="block";
+    document.querySelector("#twovalue").setAttribute("type","disabled");
+    document.querySelector("#onevalue").setAttribute("type","button");
 }
 
 //Clear Values Button
