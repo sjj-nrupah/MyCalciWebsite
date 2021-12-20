@@ -115,6 +115,9 @@ function oneval() {
     document.querySelector("#num2").setAttribute("value","0");
     document.querySelector(".hider").style.display = "block";
     document.querySelector("#twovalue").setAttribute("type","button");
+    document.querySelector("#singlehider1").style.display="none";
+    document.querySelector("#singlehider2").style.display="none";
+    document.querySelector("#singlehider3").style.display="none";
 }
 
 //Make it
@@ -131,6 +134,9 @@ var twoval = () => {
     document.querySelector("#lab2").style.display="block";
     document.querySelector("#twovalue").setAttribute("type","disabled");
     document.querySelector("#onevalue").setAttribute("type","button");
+    document.querySelector("#singlehider1").style.display="block";
+    document.querySelector("#singlehider2").style.display="block";
+    document.querySelector("#singlehider3").style.display="block";
 }
 
 //Clear Values Button

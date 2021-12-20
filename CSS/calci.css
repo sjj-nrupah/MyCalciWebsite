@@ -215,7 +215,9 @@ input[type=disabled]{
     width: 20%;
     position: relative;
 }
-.singlehider{
+#singlehider1,
+#singlehider2,
+#singlehider3{
     position: absolute;
     top: 0px;
     left: 0px;
