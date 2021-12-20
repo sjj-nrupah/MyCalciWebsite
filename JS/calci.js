@@ -55,11 +55,6 @@ var readVal = (op) => {
     }
 }
 
-//Input Incomplete
-var inmsg = () => {
-    
-}
-
 //Addition
 var add = () => {
     var num3=userip.num1+userip.num2;
@@ -103,6 +98,7 @@ var rem = () => {
     document.querySelector("#ht").style.visibility = "visible";
 }
 
+//Make it
 //Single Value Calculations
 function oneval() {
     document.querySelector("#num2").style.display="none";
@@ -118,6 +114,7 @@ function oneval() {
     document.querySelector(".hider").style.display = "block";
 }
 
+//Make it
 //Multiple Value Calculations
 var multival = () => {
     showDialog();
@@ -135,15 +132,16 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
+//Make it
 /*var myDate = new Date();
 myDate=myDate.getDate();
 document.querySelector("#Nrupah").innerHTML = "Date : "+myDate;*/
 
+//Messages for no input
 var err1 = () => {
     document.querySelector("#err1").style.display = "block";
     document.querySelector(".inputbox").style.height = "90px";
 }
-
 var err2 = () => {
     document.querySelector("#err2").style.display = "block";
     document.querySelector(".inputbox").style.height = "90px";
