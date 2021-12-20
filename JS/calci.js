@@ -120,7 +120,7 @@ function oneval() {
 
 //Multiple Value Calculations
 var multival = () => {
-    var count=prompt("How many values you want to enter ? (3/4/5)");
+    showDialog();
 }
 
 //Clear Values Button
