@@ -144,3 +144,51 @@ input[type="button"]{
 #err2{
     display: none;
 }
+
+.dialogContainer {
+    border: 1px solid;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    display: none;
+    background-color: #fff;
+}
+.dialogHeader {
+    background-color: #ccc;
+    padding: 15px 5px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dialogTextContainer {
+    height: 100px;
+    padding: 30px 5px;
+}
+
+.dialogFooter {
+    text-align: right;
+    padding: 5px;
+}
+
+.dialogFooter input[type=button] {
+    background-color: blueviolet;
+}
+
+.maskBlock {
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    opacity: 0.3;
+    display: none;
+}
+.csdlgtxt{
+    font-size: 20px;
+}

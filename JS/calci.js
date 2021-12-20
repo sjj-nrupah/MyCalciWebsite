@@ -148,3 +148,13 @@ var err2 = () => {
     document.querySelector("#err2").style.display = "block";
     document.querySelector(".inputbox").style.height = "90px";
 }
+
+//Dialog box
+var showDialog = () => {
+    document.querySelector(".maskBlock").style.display = 'block';
+    document.querySelector(".dialogContainer").style.display = 'block';
+}
+var closeDialog = () => {
+    document.querySelector(".maskBlock").style.display = 'none';
+    document.querySelector(".dialogContainer").style.display = 'none';
+}

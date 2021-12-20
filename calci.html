@@ -38,7 +38,7 @@
             </li>
         </ul>
         <ul class="menu">
-            <select class="menuop">
+            <select class="menuop" onchange="showDialog()">
                 <option>Standard</option>
                 <option>Scientific</option>
                 <option>Unit Converter</option>
@@ -65,10 +65,27 @@
                 <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="REMAINDER">
             </li>
         </ul>
+
+        <div class="maskBlock">
+            
+        </div>
+        <div class="dialogContainer">
+            <div class="dialogHeader">
+                Regret Message
+            </div>
+            <div class="dialogTextContainer csdlgtxt">
+                <p>The other types of calculators and the history option is currently unavailable.
+                I will make them available asap.</p>
+            </div>
+            <div class="dialogFooter">
+                <input type="button" value="Ok" onclick="closeDialog()">
+            </div>
+        </div>
+
         <div class="result">
             <div id="resulthead">Result</div>
             <div id="resultline">
-               <div id="ht">2323232</div>
+               <div id="ht">Result will be displayed here.</div>
             </div>
            <div class="clrres"><input type="button" value="Clear Result" id="clrslt" onclick="clearResult();" title="Clear Result"></div>
         </div>
