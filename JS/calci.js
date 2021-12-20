@@ -105,12 +105,12 @@ var rem = () => {
 function oneval() {
     document.querySelector("#num2").style.display="none";
     document.querySelector("#lab2").style.display="none";
-    document.querySelector("#num1").style.position="relative";
-    document.querySelector("#num1").style.top="20px";
-    document.querySelector("#lab1").style.position="relative";
-    document.querySelector("#lab1").style.top="15px";
-    document.querySelector("#lab1").innerText="Enter the value : ";
-    document.querySelector("#lab1").style.fontSize="25px";
+    //document.querySelector("#num1").style.position="relative";
+    //document.querySelector("#num1").style.top="20px";
+    //document.querySelector("#lab1").style.position="relative";
+    //document.querySelector("#lab1").style.top="15px";
+    document.querySelector("#lab1").innerText="Enter the number : ";
+    //document.querySelector("#lab1").style.fontSize="25px";
     document.querySelector("#onevalue").setAttribute("type","disabled");
     document.querySelector("#num2").setAttribute("value","0");
     document.querySelector(".hider").style.display = "block";

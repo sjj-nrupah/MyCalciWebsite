@@ -215,3 +215,12 @@ input[type=disabled]{
     width: 20%;
     position: relative;
 }
+.singlehider{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: blueviolet;
+    opacity: 0.3;
+}
