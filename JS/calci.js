@@ -1,6 +1,8 @@
 //JSON Object Creation
 var userip ={}
 
+// x^y and yth root of x bhi banana hoga.
+
 //Reading the User Input Data for two values
 var readVal = (op) => {
     userip.num1=document.querySelector("#num1").value;
