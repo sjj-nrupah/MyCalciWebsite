@@ -137,6 +137,8 @@ var twoval = () => {
     document.querySelector("#singlehider1").style.display="block";
     document.querySelector("#singlehider2").style.display="block";
     document.querySelector("#singlehider3").style.display="block";
+    document.querySelector("#num2").removeAttribute("value");
+    document.querySelector("#lab1").innerText="Enter first number : ";
 }
 
 //Clear Values Button
