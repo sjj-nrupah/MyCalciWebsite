@@ -38,8 +38,8 @@ var readVal = (op) => {
         document.querySelector(".inputbox").style.height = "65px";
     }
 
-    userip.num1=parseInt(userip.num1);
-    userip.num2=parseInt(userip.num2);
+    userip.num1=parseFloat(userip.num1);
+    userip.num2=parseFloat(userip.num2);
 
     switch(op) {
         case add : add();
@@ -197,7 +197,7 @@ var readSval = (op) => {
         document.querySelector("#err1").style.display = "none";
     }
 
-    userip.num1=parseInt(userip.num1);
+    userip.num1=parseFloat(userip.num1);
     switch(op) {
         case abs_val : abs_val();
         break;
@@ -275,7 +275,7 @@ var reci = () => {
 
 //Factorial
 var fact = () =>{
-    var n = userip.num1;
+    var n = parseInt(userip.num1);
     var num3;
     if(n==0) {
         num3 = 1;
@@ -330,10 +330,12 @@ var adinv = () => {
     visible();
 }
 
-//Make this one
 //Radian to Degree
 var raddeg = () => {
-    showDialog();
+    var pi = Math.PI;
+    var num3 = 180*(userip.num1/pi);
+    document.querySelector("#ht").innerHTML = "The value of "+userip.num1+" radians is "+num3+" degrees";
+    visible();
 }
 
 //Sine
