@@ -199,7 +199,7 @@ var readSval = (op) => {
 
     userip.num1=parseInt(userip.num1);
     switch(op) {
-        case absval : abs_val();
+        case abs_val : abs_val();
         break;
         case logb10 : logb10();
         break;
@@ -211,7 +211,7 @@ var readSval = (op) => {
         break;
         case fact : fact();
         break;
-        case sqr : xsq();
+        case sq : xsq();
         break;
         case cube : xcu();
         break;
