@@ -69,7 +69,7 @@
                 <input type="button" id="quot" value="DIVIDE FOR QUOTIENT" class="button1in" onclick="readVal(quot);" title="QUOTIENT">
             </li>
             <li>
-                <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="REMAINDER">
+                <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="MODULUS OR REMAINDER">
             </li>
             <div class="hider">
 
@@ -78,13 +78,13 @@
 
         <ul class="singlebutton">
             <li>
-                <input type="button" id="mod" value="MODULUS" class="button1in" onclick="" title="MODULUS">
+                <input type="button" id="mod" value="ABSOLUTE VALUE" class="button1in" onclick="readSval(mod)" title="ABSOLUTE VALUE">
             </li>
             <li>
-                <input type="button" id="ln" value="LOG BASE e" class="button1in" onclick="" title="log">
+                <input type="button" id="ln" value="log" class="button1in" onclick="readSval(log)" title="COMMON LOGARITHM (BASE 10)">
             </li>
             <li>
-                <input type="button" id="log" value="LOG BASE 10" class="button1in" onclick="" title="ln">
+                <input type="button" id="log" value="ln" class="button1in" onclick="readSval(ln)" title="NATURAL LOGARITHM (BASE e)">
             </li>
             <li>
                 <input type="button" id="exp" value="EXPONENTIAL" class="button1in" onclick="" title="exp">
@@ -108,7 +108,7 @@
                 <input type="button" id="cube" value="x³" class="button1in" onclick="" title="CUBE">
             </li>
             <li>
-                <input type="button" id="sqrt" value="√x" class="button1in" onclick="" title="SQUARE ROOT">
+                <input type="button" id="sqrt" value="√x" class="button1in" onclick="readSval(sqrt)" title="SQUARE ROOT">
             </li>
             <li>
                 <input type="button" id="cbrt" value="∛x" class="button1in" onclick="" title="CUBE ROOT">

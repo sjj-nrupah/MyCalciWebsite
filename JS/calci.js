@@ -61,28 +61,28 @@ var readVal = (op) => {
 var add = () => {
     var num3=userip.num1+userip.num2;
     document.querySelector("#ht").innerHTML = "The Sum is "+num3;
-    document.querySelector("#ht").style.visibility = "visible";
+    visible();
 }
 
 //Subtraction
 var sub = () => {
     var num3=userip.num1-userip.num2;
     document.querySelector("#ht").innerHTML = "The Difference is "+num3;
-    document.querySelector("#ht").style.visibility = "visible";
+    visible();
 }
 
 //Multiplication
 var multi = () => {
     var num3=userip.num1*userip.num2;
     document.querySelector("#ht").innerHTML = "The Product is "+num3;
-    document.querySelector("#ht").style.visibility = "visible";
+    visible();
 }
 
 //Division
 var divide = () => {
     var num3=userip.num1/userip.num2;
     document.querySelector("#ht").innerHTML = "The Division is "+num3;
-    document.querySelector("#ht").style.visibility = "visible";
+    visible();
 }
 
 //Quotient
@@ -90,19 +90,19 @@ var quot = () => {
     var num3=userip.num1/userip.num2;
     num3=Math.floor(num3);
     document.querySelector("#ht").innerHTML = "The Quotient is "+num3;
-    document.querySelector("#ht").style.visibility = "visible";
+    visible();
 }
 
 //Remainder
 var rem = () => {    
     var num3=userip.num1%userip.num2;
     document.querySelector("#ht").innerHTML = "The Remainder is "+num3;
-    document.querySelector("#ht").style.visibility = "visible";
+    visible();
 }
 
 //Make it
 //Single Value Calculations
-function oneval() {
+var oneval = () => {
     document.querySelector("#num2").style.display="none";
     document.querySelector("#lab2").style.display="none";
     //document.querySelector("#num1").style.position="relative";
@@ -112,7 +112,6 @@ function oneval() {
     document.querySelector("#lab1").innerText="Enter the number : ";
     //document.querySelector("#lab1").style.fontSize="25px";
     document.querySelector("#onevalue").setAttribute("type","disabled");
-    document.querySelector("#num2").setAttribute("value","0");
     document.querySelector(".hider").style.display = "block";
     document.querySelector("#twovalue").setAttribute("type","button");
     document.querySelector("#singlehider1").style.display="none";
@@ -137,7 +136,6 @@ var twoval = () => {
     document.querySelector("#singlehider1").style.display="block";
     document.querySelector("#singlehider2").style.display="block";
     document.querySelector("#singlehider3").style.display="block";
-    document.querySelector("#num2").removeAttribute("value");
     document.querySelector("#lab1").innerText="Enter first number : ";
 }
 
@@ -168,6 +166,11 @@ var err2 = () => {
     document.querySelector(".inputbox").style.height = "90px";
 }
 
+//Making the Result Visible
+var visible = () => {
+    document.querySelector("#ht").style.visibility = "visible";
+}
+
 //Dialog box
 var showDialog = () => {
     document.querySelector(".maskBlock").style.display = 'block';
@@ -179,4 +182,60 @@ var showDialog = () => {
 var closeDialog = () => {
     document.querySelector(".maskBlock").style.display = 'none';
     document.querySelector(".dialogContainer").style.display = 'none';
+}
+
+//Reading values for a single input
+var readSval = (op) => {
+    userip.num1=document.querySelector("#num1").value;
+
+    if(userip.num1=="") {
+        err1();
+        document.querySelector(".inputbox").style.height = "65px";
+        return;
+    }
+    else{
+        document.querySelector("#err1").style.display = "none";
+    }
+
+    userip.num1=parseInt(userip.num1);
+    switch(op) {
+        case mod : abs_val();
+        break;
+        case log : logb10();
+        break;
+        case ln : logbe();
+        break;
+        case sqrt : sqrt();
+        break;
+    }
+}
+
+//Absolute Value
+var abs_val = () => {
+    var num3 = Math.abs(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Absolute Value is "+num3;
+    visible();
+}
+
+//log
+var logb10 = () => {
+    var num3 = Math.log10(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Common Logarithm Value is "+num3;
+    visible();
+}
+
+//ln
+{
+    var logbe = () => {
+    var num3 = Math.log(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Natural Logarithm Value is "+num3;
+    visible();
+    }
+}
+
+//Square Root
+var sqrt = () => {
+    var num3 = Math.sqrt(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Square Root is "+num3;
+    visible();
 }
