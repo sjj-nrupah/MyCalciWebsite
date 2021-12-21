@@ -172,6 +172,9 @@ var err2 = () => {
 var showDialog = () => {
     document.querySelector(".maskBlock").style.display = 'block';
     document.querySelector(".dialogContainer").style.display = 'block';
+    setTimeout(function selectChanger() {
+        document.querySelector("select").value = "Standard";
+    },1000);
 }
 var closeDialog = () => {
     document.querySelector(".maskBlock").style.display = 'none';
