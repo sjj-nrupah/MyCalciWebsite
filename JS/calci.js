@@ -205,32 +205,99 @@ var readSval = (op) => {
         break;
         case ln : logbe();
         break;
+        case exp : exp();
+        break;
+        case reci : reci();
+        break;
+        case fact : fact();
+        break;
+        case sq : xsq();
+        break;
+        case cu : xcu();
+        break;
         case sqrt : sqrt();
         break;
+        //case cbrt
+        //case plus minus
+        //case dr
+        //case sin
+        //case cos
+        //case tan
+        //case sininv
+        //case cosinv
+        //case taninv
     }
 }
 
 //Absolute Value
 var abs_val = () => {
     var num3 = Math.abs(userip.num1);
-    document.querySelector("#ht").innerHTML = "The Absolute Value is "+num3;
+    document.querySelector("#ht").innerHTML = "The Absolute Value of "+userip.num1+" is "+num3;
     visible();
 }
 
 //log
 var logb10 = () => {
     var num3 = Math.log10(userip.num1);
-    document.querySelector("#ht").innerHTML = "The Common Logarithm Value is "+num3;
+    document.querySelector("#ht").innerHTML = "The Common Logarithm of "+userip.num1+" is "+num3;
     visible();
 }
 
 //ln
-{
-    var logbe = () => {
+var logbe = () => {
     var num3 = Math.log(userip.num1);
-    document.querySelector("#ht").innerHTML = "The Natural Logarithm Value is "+num3;
+    document.querySelector("#ht").innerHTML = "The Natural Logarithm of "+userip.num1+" is "+num3;
     visible();
+}
+
+//Exponential
+var exp = () => {
+    var num3 = Math.exp(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Exponential is "+num3;
+    visible();
+}
+
+//Reciprocal
+var reci = () => {
+    var num3 = 1/(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Reciprocal of "+userip.num1+" is "+num3;
+    visible();
+}
+
+//Factorial
+var fact = () =>{
+    var n = userip.num1;
+    var num3;
+    if(n==0) {
+        num3 = 1;
     }
+    else {
+        num3 = factorial(n);
+    }
+    document.querySelector("#ht").innerHTML = "The Factorial of "+n+" is "+num3;
+    visible();
+}
+function factorial(no) {
+    var i;
+    var facto=1;
+    for(i=1;i<=no;i++) {
+        facto=facto*i;
+    }
+    return facto;
+}
+
+//Square
+var xsq = () => {
+    var num3 = userip.num1*userip.num1;
+    document.querySelector("#ht").innerHTML = "The Square of "+userip.num1+" is "+num3;
+    visible();
+}
+
+//Cube
+var xcu = () => {
+    var num3 = userip.num1*userip.num1*userip.num1;
+    document.querySelector("#ht").innerHTML = "The Cube of"+userip.num1+" is "+num3;
+    visible();
 }
 
 //Square Root
