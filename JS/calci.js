@@ -199,11 +199,11 @@ var readSval = (op) => {
 
     userip.num1=parseInt(userip.num1);
     switch(op) {
-        case mod : abs_val();
+        case absval : abs_val();
         break;
-        case log : logb10();
+        case logb10 : logb10();
         break;
-        case ln : logbe();
+        case logbe : logbe();
         break;
         case exp : exp();
         break;
@@ -211,21 +211,30 @@ var readSval = (op) => {
         break;
         case fact : fact();
         break;
-        case sq : xsq();
+        case sqr : xsq();
         break;
-        case cu : xcu();
+        case cube : xcu();
         break;
         case sqrt : sqrt();
         break;
-        //case cbrt
-        //case plus minus
-        //case dr
-        //case sin
-        //case cos
-        //case tan
-        //case sininv
-        //case cosinv
-        //case taninv
+        case cbrt : cbrt();
+        break;
+        case adinv : adinv();
+        break;
+        case raddeg : raddeg();
+        break;
+        case sine : sine();
+        break;
+        case cosine : cosine();
+        break;
+        case tangent : tangent();
+        break;
+        case sininv : sininv();
+        break;
+        case cosinv : cosinv();
+        break;
+        case taninv : taninv();
+        break;
     }
 }
 
@@ -296,13 +305,75 @@ var xsq = () => {
 //Cube
 var xcu = () => {
     var num3 = userip.num1*userip.num1*userip.num1;
-    document.querySelector("#ht").innerHTML = "The Cube of"+userip.num1+" is "+num3;
+    document.querySelector("#ht").innerHTML = "The Cube of "+userip.num1+" is "+num3;
     visible();
 }
 
 //Square Root
 var sqrt = () => {
     var num3 = Math.sqrt(userip.num1);
-    document.querySelector("#ht").innerHTML = "The Square Root is "+num3;
+    document.querySelector("#ht").innerHTML = "The Square Root of "+userip.num1+" is "+num3;
+    visible();
+}
+
+//Cube Root
+var cbrt = () => {
+    var num3 = Math.cbrt(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Cube Root of "+userip.num1+" is "+num3;
+    visible();
+}
+
+//Additive Inverse
+var adinv = () => {
+    var num3 = 0-userip.num1;
+    document.querySelector("#ht").innerHTML = "The Additive Inverse is "+num3;
+    visible();
+}
+
+//Make this one
+//Radian to Degree
+var raddeg = () => {
+    showDialog();
+}
+
+//Sine
+var sine = () => {
+    var num3 = Math.sin(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Sine of "+userip.num1+" Radians is "+num3;
+    visible();
+}
+
+//Cosine
+var cosine = () => {
+    var num3 = Math.cos(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Cosine of "+userip.num1+" Radians is "+num3;
+    visible();
+}
+
+//Tangent
+var tangent = () => {
+    var num3 = Math.tan(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Tangent of "+userip.num1+" Radians is "+num3;
+    visible();
+}
+
+//Arcsine
+var sininv = () => {
+    var num3 = Math.asin(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Sine Inverse of "+userip.num1+" is "+num3+" Radians";
+    visible();
+}
+
+//Arccosine
+var cosinv = () => {
+    var num3 = Math.acos(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Cosine Inverse of "+userip.num1+" is "+num3+" Radians";
+    visible();
+}
+
+//Arctangent
+var taninv = () => {
+    var num3 = Math.atan(userip.num1);
+    document.querySelector("#ht").innerHTML = "The Tangent Inverse of "+userip.num1+" is "+num3+" Radians";
     visible();
 }

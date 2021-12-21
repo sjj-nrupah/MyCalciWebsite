@@ -78,13 +78,13 @@
 
         <ul class="singlebutton">
             <li>
-                <input type="button" id="mod" value="ABSOLUTE VALUE" class="button1in" onclick="readSval(mod)" title="ABSOLUTE VALUE">
+                <input type="button" id="mod" value="ABSOLUTE VALUE" class="button1in" onclick="readSval(absval)" title="ABSOLUTE VALUE">
             </li>
             <li>
-                <input type="button" id="ln" value="log" class="button1in" onclick="readSval(log)" title="COMMON LOGARITHM (BASE 10)">
+                <input type="button" id="ln" value="log" class="button1in" onclick="readSval(logb10)" title="COMMON LOGARITHM (BASE 10)">
             </li>
             <li>
-                <input type="button" id="log" value="ln" class="button1in" onclick="readSval(ln)" title="NATURAL LOGARITHM (BASE e)">
+                <input type="button" id="log" value="ln" class="button1in" onclick="readSval(logbe)" title="NATURAL LOGARITHM (BASE e)">
             </li>
             <li>
                 <input type="button" id="exp" value="EXPONENTIAL" class="button1in" onclick="readSval(exp)" title="exp">
@@ -102,22 +102,22 @@
 
         <ul class="singlebutton">
             <li>
-                <input type="button" id="sq" value="x²" class="button1in" onclick="readSval(sq)" title="SQUARE">
+                <input type="button" id="sq" value="x²" class="button1in" onclick="readSval(sqr)" title="SQUARE">
             </li>
             <li>
-                <input type="button" id="cube" value="x³" class="button1in" onclick="readSval(cu)" title="CUBE">
+                <input type="button" id="cube" value="x³" class="button1in" onclick="readSval(cube)" title="CUBE">
             </li>
             <li>
                 <input type="button" id="sqrt" value="√x" class="button1in" onclick="readSval(sqrt)" title="SQUARE ROOT">
             </li>
             <li>
-                <input type="button" id="cbrt" value="∛x" class="button1in" onclick="" title="CUBE ROOT">
+                <input type="button" id="cbrt" value="∛x" class="button1in" onclick="readSval(cbrt)" title="CUBE ROOT">
             </li>
             <li>
-                <input type="button" id="adinv" value="±" class="button1in" onclick="" title="ADDITIVE INVERSE">
+                <input type="button" id="adinv" value="±" class="button1in" onclick="readSval(adinv)" title="ADDITIVE INVERSE">
             </li>
             <li>
-                <input type="button" id="degrad" value="DEG -> RAD" class="button1in" onclick="" title="DEGREE TO RADIAN">
+                <input type="button" id="raddeg" value="RAD -> DEG" class="button1in" onclick="readSval(raddeg)" title="RADIAN TO DEGREE">
             </li>
             <div id="singlehider2">
 
@@ -126,22 +126,22 @@
 
         <ul class="singlebutton">
             <li>
-                <input type="button" id="sin" value="sin" class="button1in" onclick="" title="SIN">
+                <input type="button" id="sin" value="sin" class="button1in" onclick="readSval(sine)" title="SIN">
             </li>
             <li>
-                <input type="button" id="cos" value="cos" class="button1in" onclick="" title="COS">
+                <input type="button" id="cos" value="cos" class="button1in" onclick="readSval(cosine)" title="COS">
             </li>
             <li>
-                <input type="button" id="tan" value="tan" class="button1in" onclick="" title="TAN">
+                <input type="button" id="tan" value="tan" class="button1in" onclick="readSval(tangent)" title="TAN">
             </li>
             <li>
-                <input type="button" id="sininv" value="sin¯¹" class="button1in" onclick="" title="SIN INVERSE">
+                <input type="button" id="sininv" value="sin¯¹" class="button1in" onclick="readSval(sininv)" title="SIN INVERSE">
             </li>
             <li>
-                <input type="button" id="cosinv" value="cos¯¹" class="button1in" onclick="" title="COS INVERSE">
+                <input type="button" id="cosinv" value="cos¯¹" class="button1in" onclick="readSval(cosinv)" title="COS INVERSE">
             </li>
             <li>
-                <input type="button" id="taninv" value="tan¯¹" class="button1in" onclick="" title="TAN INVERSE">
+                <input type="button" id="taninv" value="tan¯¹" class="button1in" onclick="readSval(taninv)" title="TAN INVERSE">
             </li>
             <div id="singlehider3">
 
