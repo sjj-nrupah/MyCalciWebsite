@@ -155,10 +155,33 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
+/*var dateFun = () => {
+    var yourDate = new Date();
+    console.log(yourDate);
+    date = yourDate.getDate();
+    console.log(date);
+    document.querySelector("#date").innerText = "date";
+}
+dateFun();*/
 //Make it
-/*var myDate = new Date();
-myDate=myDate.getDate();
-document.querySelector("#Nrupah").innerHTML = "Date : "+myDate;*/
+/*setInterval(function meD() {
+    var myDate = new Date();
+    //console.log(myDate);
+    sec= myDate.getSeconds();
+    console.log(sec);
+},1000);
+Date=myDate.getDate();
+console.log(Date);
+Day=myDate.getDay();
+console.log(Day);
+month=myDate.getMonth();
+console.log(month);
+year=myDate.getFullYear();
+console.log(year);
+min=myDate.getMinutes();
+console.log(min);*/
+//console.log(Date+"-"+(month+1)+"-"+year);
+//document.querySelector("#Nrupah").innerHTML = "Date : "+myDate;
 
 //Messages for no input
 var err1 = () => {

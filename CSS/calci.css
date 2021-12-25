@@ -50,6 +50,13 @@ li{
     margin: 5px;
     border-radius: 6px;
 }
+/*.DT{
+    border: 3px solid black;
+    float: left;
+    margin-left: 3px;
+    height: 65px;
+    padding: 4px;
+}*/
 .button1{
    clear: both;
    position: relative;
