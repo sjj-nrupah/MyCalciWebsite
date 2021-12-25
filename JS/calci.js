@@ -111,9 +111,11 @@ var oneval = () => {
     //document.querySelector("#lab1").style.top="15px";
     document.querySelector("#lab1").innerText="Enter the number : ";
     //document.querySelector("#lab1").style.fontSize="25px";
-    document.querySelector("#onevalue").setAttribute("type","disabled");
+    //document.querySelector("#onevalue").setAttribute("type","disabled");
+    document.querySelector("#onevalue").disabled = true;
     document.querySelector(".hider").style.display = "block";
-    document.querySelector("#twovalue").setAttribute("type","button");
+    //document.querySelector("#twovalue").setAttribute("type","button");
+    document.querySelector("#twovalue").disabled = false;
     document.querySelector("#singlehider1").style.display="none";
     document.querySelector("#singlehider2").style.display="none";
     document.querySelector("#singlehider3").style.display="none";
@@ -131,8 +133,10 @@ var twoval = () => {
     document.querySelector(".hider").style.display = "none";
     document.querySelector("#num2").style.display="block";
     document.querySelector("#lab2").style.display="block";
-    document.querySelector("#twovalue").setAttribute("type","disabled");
-    document.querySelector("#onevalue").setAttribute("type","button");
+    //document.querySelector("#twovalue").setAttribute("type","disabled");
+    document.querySelector("#twovalue").disabled = true;
+    //document.querySelector("#onevalue").setAttribute("type","button");
+    document.querySelector("#onevalue").disabled = false;
     document.querySelector("#singlehider1").style.display="block";
     document.querySelector("#singlehider2").style.display="block";
     document.querySelector("#singlehider3").style.display="block";
