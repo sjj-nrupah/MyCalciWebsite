@@ -124,6 +124,11 @@ var oneval = () => {
 //Make it
 //Multiple Value Calculations
 var multival = () => {
+    /*document.querySelector("#lab1").style.display = "none";
+    document.querySelector("#num1").style.display = "none";
+    document.querySelector("#lab2").style.display = "none";
+    document.querySelector("#num2").style.display = "none";
+    document.querySelector(".inputbox").createElement("textbox");*/
     showDialog();
 }
 
@@ -155,6 +160,10 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
+var datetimepresenter = () => {
+    var dtworker = new Worker('JS/displayDate.js');
+
+}
 /*var dateFun = () => {
     var yourDate = new Date();
     console.log(yourDate);
