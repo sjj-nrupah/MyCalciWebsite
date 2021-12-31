@@ -162,7 +162,7 @@ var clearResult = () => {
 
 var datetimepresenter = () => {
     var dtworker = new Worker('JS/displayDate.js');
-
+    
 }
 /*var dateFun = () => {
     var yourDate = new Date();
