@@ -161,7 +161,7 @@ var clearResult = () => {
 }
 
 var datetimepresenter = () => {
-    var dtworker = new Worker('JS/displayDate.js');
+    //var dtworker = new Worker('JS/displayDate.js');
     alert("I work");
 }
 /*var dateFun = () => {
