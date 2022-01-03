@@ -160,21 +160,25 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
-    //var dtworker = new Worker('JS/displayDate.js');
-var date = new Date();
+//Displaying Day, Date and Time
+
+//var dtworker = new Worker('JS/displayDate.js');
+//var date = new Date();
 //console.log(date);
-var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-var disdate = date.getDate()+"-"+months[date.getMonth()]+"-"+date.getFullYear();;
-var disday = days[date.getDay()];
-var distime = date.getHours()+" : "+date.getMinutes()+" : "+date.getSeconds();
 //console.log(disdate);
 
-window.onload = function dattur() {
+/*window.onload = function dattur() {
     document.querySelector("#showday").innerHTML = disday;
     document.querySelector("#showdate").innerText = disdate;
     document.querySelector("#showtime").innerHTML = "Time";
-}
+}*/
+
+var myDayWorker = new Worker('displayDay.js');
+myDayWorker.onmessage = function(event) {
+    console.log("received data from worker is " )
+    //console.log(event.data);
+    $("#showday").html(event.data);
+};
 
 /*var dateFun = () => {
     var yourDate = new Date();
