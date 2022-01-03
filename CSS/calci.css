@@ -61,6 +61,10 @@ li{
 }
 .dttext{
     font-size: 20px;
+    font-family: serif;
+}
+#showtime{
+    font-weight: bold;
 }
 .button1{
    clear: both;

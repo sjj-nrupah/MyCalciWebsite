@@ -184,5 +184,15 @@
 		<div id="Nrupah">Made by Nrupah</div>
 		<div>&copy;SJJ</div>
 	</div>
+
+    <script>
+        var date = new Date();
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var disday = days[date.getDay()];
+        var disdate = date.getDate()+"-"+months[date.getMonth()]+"-"+date.getFullYear();
+        document.querySelector("#showday").innerHTML = disday;
+        document.querySelector("#showdate").innerHTML = disdate;
+    </script>
 </body>
 </html>

@@ -161,15 +161,15 @@ var clearResult = () => {
 }
 
 //Displaying Day and Date
-window.onload = function dayDate() {
+/*window.onload = function dayDate() {
     var date = new Date();
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var disday = days[date.getDay()];
     var disdate = date.getDate()+"-"+months[date.getMonth()]+"-"+date.getFullYear();
     document.querySelector("#showday").innerHTML = disday;
-    document.querySelector("#showdate").innerText = disdate;
-}
+    document.querySelector("#showdate").innerHTML = disdate;
+}*/
 
 //Messages for no input
 var err1 = () => {
@@ -393,4 +393,28 @@ var taninv = () => {
     var num3 = Math.atan(userip.num1);
     document.querySelector("#ht").innerHTML = "The Tangent Inverse of "+userip.num1+" is "+num3+" Radians";
     visible();
+}
+
+//Display Time
+window.onload = function timedisplayer() {
+    function timedis() {
+        var datet = new Date;
+        var dishour = datet.getHours();
+        if(dishour<10) {
+            dishour = "0"+dishour;
+        }
+        var dismin = datet.getMinutes();
+        if(dismin<10) {
+            dismin = "0"+dismin;
+        }
+        var dissec = datet.getSeconds();
+        if(dissec<10) {
+            dissec = "0"+dissec;
+        }
+        var distime = dishour+" : "+dismin+" : "+dissec;
+        document.querySelector("#showtime").innerHTML = distime;
+    }
+    setInterval(() => {
+        timedis();
+    }, 1000);
 }
