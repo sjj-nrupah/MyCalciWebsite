@@ -51,13 +51,16 @@ li{
     border-radius: 6px;
 }
 .dt{
-    border: 4px solid black;
+    border: 3px solid black;
     float: left;
     margin-left: 3px;
     height: 65px;
+    width: 275px;
     padding: 4px;
     text-align: center;
-    border-radius: 4px;
+}
+.dttext{
+    font-size: 20px;
 }
 .button1{
    clear: both;

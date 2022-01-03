@@ -53,8 +53,10 @@
         </ul>
 
         <ul class="dt">
-            <button value="date" onclick="datetimepresenter()">Date</button>
-            Date will be displayed here.
+            <button value="date" onclick="datetimepresenter()" style="display: none;">Date</button>
+            <div id="showday" class="dttext">Day</div>
+            <div id="showdate" class="dttext">Date</div>
+            <div id="showtime" class="dttext">Time</div>
         </ul>
 
         <ul class="button1">
@@ -76,7 +78,7 @@
             <li>
                 <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="MODULUS OR REMAINDER">
             </li>
-            <div class="hider">
+            <div class="hider" title="Press the Two Numbers button to use these functions.">
 
             </div>
         </ul>
@@ -100,7 +102,7 @@
             <li>
                 <input type="button" id="fact" value="FACTORIAL" class="button1in" onclick="readSval(fact)" title="x!">
             </li>
-            <div id="singlehider1">
+            <div id="singlehider1" title="Press the Single Number button to use these functions.">
 
             </div>
         </ul>
@@ -124,7 +126,7 @@
             <li>
                 <input type="button" id="raddeg" value="RAD -> DEG" class="button1in" onclick="readSval(raddeg)" title="RADIAN TO DEGREE">
             </li>
-            <div id="singlehider2">
+            <div id="singlehider2" title="Press the Single Number button to use these functions.">
 
             </div>
         </ul>
@@ -148,7 +150,7 @@
             <li>
                 <input type="button" id="taninv" value="tan¯¹" class="button1in" onclick="readSval(taninv)" title="TAN INVERSE">
             </li>
-            <div id="singlehider3">
+            <div id="singlehider3" title="Press the Single Number button to use these functions.">
 
             </div>
         </ul>
@@ -179,7 +181,7 @@
     </div>
 
     <div class="footer">
-		<div id="Nrupah">@Nrupah</div>
+		<div id="Nrupah">Made by Nrupah</div>
 		<div>&copy;SJJ</div>
 	</div>
 </body>

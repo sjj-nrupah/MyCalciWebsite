@@ -160,10 +160,22 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
-var datetimepresenter = () => {
     //var dtworker = new Worker('JS/displayDate.js');
-    alert("I work");
+var date = new Date();
+//console.log(date);
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var disdate = date.getDate()+"-"+months[date.getMonth()]+"-"+date.getFullYear();;
+var disday = days[date.getDay()];
+var distime = date.getHours()+" : "+date.getMinutes()+" : "+date.getSeconds();
+//console.log(disdate);
+
+window.onload = function dattur() {
+    document.querySelector("#showday").innerHTML = disday;
+    document.querySelector("#showdate").innerText = disdate;
+    document.querySelector("#showtime").innerHTML = "Time";
 }
+
 /*var dateFun = () => {
     var yourDate = new Date();
     console.log(yourDate);
