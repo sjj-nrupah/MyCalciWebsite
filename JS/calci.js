@@ -160,53 +160,16 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
-//Displaying Day, Date and Time
-
-//var dtworker = new Worker('JS/displayDate.js');
-//var date = new Date();
-//console.log(date);
-//console.log(disdate);
-
-/*window.onload = function dattur() {
+//Displaying Day and Date
+window.onload = function dayDate() {
+    var date = new Date();
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var disday = days[date.getDay()];
+    var disdate = date.getDate()+"-"+months[date.getMonth()]+"-"+date.getFullYear();
     document.querySelector("#showday").innerHTML = disday;
     document.querySelector("#showdate").innerText = disdate;
-    document.querySelector("#showtime").innerHTML = "Time";
-}*/
-
-var myDayWorker = new Worker('displayDay.js');
-myDayWorker.onmessage = function(event) {
-    console.log("received data from worker is " )
-    //console.log(event.data);
-    $("#showday").html(event.data);
-};
-
-/*var dateFun = () => {
-    var yourDate = new Date();
-    console.log(yourDate);
-    date = yourDate.getDate();
-    console.log(date);
-    document.querySelector("#date").innerText = "date";
 }
-dateFun();*/
-//Make it
-/*setInterval(function meD() {
-    var myDate = new Date();
-    //console.log(myDate);
-    sec= myDate.getSeconds();
-    console.log(sec);
-},1000);
-Date=myDate.getDate();
-console.log(Date);
-Day=myDate.getDay();
-console.log(Day);
-month=myDate.getMonth();
-console.log(month);
-year=myDate.getFullYear();
-console.log(year);
-min=myDate.getMinutes();
-console.log(min);*/
-//console.log(Date+"-"+(month+1)+"-"+year);
-//document.querySelector("#Nrupah").innerHTML = "Date : "+myDate;
 
 //Messages for no input
 var err1 = () => {
