@@ -57,6 +57,24 @@ var readVal = (op) => {
     }
 }
 
+//Checking if input is number or not
+var checkNum = (event, id) => {
+    //console.log("hello");
+    //console.log(event);
+    //console.log(id);
+    if (event.charCode >= 48 && event.charCode <= 57){
+        document.querySelector(id).style.display = 'none';
+        document.querySelector(".inputbox").style.height = "65px";
+        return true;
+    } else {
+        document.querySelector(id).style.display = 'block';
+        document.querySelector(".inputbox").style.height = "90px";
+        return false;
+    }
+
+    return true;
+}
+
 //Addition
 var add = () => {
     var num3=userip.num1+userip.num2;
@@ -393,6 +411,14 @@ var taninv = () => {
     var num3 = Math.atan(userip.num1);
     document.querySelector("#ht").innerHTML = "The Tangent Inverse of "+userip.num1+" is "+num3+" Radians";
     visible();
+}
+
+//Teller
+var singleteller = () => {
+    alert("Press the Single Number Button to use");
+}
+var doubleteller = () => {
+    alert("Press the Two Numbers Button to use");
 }
 
 //Display Time

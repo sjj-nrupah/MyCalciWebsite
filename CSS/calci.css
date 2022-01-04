@@ -165,6 +165,12 @@ input[type="button"]{
 #err2{
     display: none;
 }
+#numerr1{
+    display: none;
+}
+#numerr2{
+    display: none;
+}
 
 .dialogContainer {
     border: 1px solid;

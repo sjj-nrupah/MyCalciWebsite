@@ -18,14 +18,16 @@
         <ul class="inputbox">
             <li>
                 <label for="Num1" class="ipbox" id="lab1">Enter first number :</label>
-                <input type="text" id="num1" name="Num1" class="ipin">
+                <input type="text" id="num1" name="Num1" class="ipin" onkeypress="return checkNum(event, '#numerr1')">
             </li>
             <div class="incmplterr" id="err1">Enter this value</div>
+            <div class="incmplterr" id="numerr1">Enter only numbers</div>
             <li>
                 <label for="Num2" class="ipbox" id="lab2">Enter second number :</label>
-                <input type="text" id="num2" name="Num2" class="ipin">
+                <input type="text" id="num2" name="Num2" class="ipin" onkeypress="return checkNum(event, '#numerr2')">
             </li>
             <div class="incmplterr" id="err2">Enter this value</div>
+            <div class="incmplterr" id="numerr2">Enter only numbers</div>
         </ul>
 
         <ul class="notyetmade">
@@ -78,7 +80,7 @@
             <li>
                 <input type="button" id="rem" value="DIVIDE FOR REMAINDER" class="button1in" onclick="readVal(rem);" title="MODULUS OR REMAINDER">
             </li>
-            <div class="hider" title="Press the Two Numbers button to use these functions.">
+            <div class="hider" title="Press the Two Numbers button to use these functions." onclick="doubleteller()">
 
             </div>
         </ul>
@@ -102,7 +104,7 @@
             <li>
                 <input type="button" id="fact" value="FACTORIAL" class="button1in" onclick="readSval(fact)" title="x!">
             </li>
-            <div id="singlehider1" title="Press the Single Number button to use these functions.">
+            <div id="singlehider1" title="Press the Single Number button to use these functions." onclick="singleteller()">
 
             </div>
         </ul>
@@ -126,7 +128,7 @@
             <li>
                 <input type="button" id="raddeg" value="RAD -> DEG" class="button1in" onclick="readSval(raddeg)" title="RADIAN TO DEGREE">
             </li>
-            <div id="singlehider2" title="Press the Single Number button to use these functions.">
+            <div id="singlehider2" title="Press the Single Number button to use these functions." onclick="singleteller()">
 
             </div>
         </ul>
@@ -150,7 +152,7 @@
             <li>
                 <input type="button" id="taninv" value="tan¯¹" class="button1in" onclick="readSval(taninv)" title="TAN INVERSE">
             </li>
-            <div id="singlehider3" title="Press the Single Number button to use these functions.">
+            <div id="singlehider3" title="Press the Single Number button to use these functions." onclick="singleteller()">
 
             </div>
         </ul>
