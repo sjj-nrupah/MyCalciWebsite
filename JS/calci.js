@@ -68,11 +68,9 @@ var checkNum = (event, id) => {
         return true;
     } else {
         document.querySelector(id).style.display = 'block';
-        document.querySelector(".inputbox").style.height = "90px";
+        document.querySelector(".inputbox").style.height = "110px";
         return false;
     }
-
-    return true;
 }
 
 //Addition
