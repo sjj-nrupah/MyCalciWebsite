@@ -176,17 +176,6 @@ var clearResult = () => {
     document.querySelector("#ht").innerHTML = "";
 }
 
-//Displaying Day and Date
-/*window.onload = function dayDate() {
-    var date = new Date();
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var disday = days[date.getDay()];
-    var disdate = date.getDate()+"-"+months[date.getMonth()]+"-"+date.getFullYear();
-    document.querySelector("#showday").innerHTML = disday;
-    document.querySelector("#showdate").innerHTML = disdate;
-}*/
-
 //Messages for no input
 var err1 = () => {
     document.querySelector("#err1").style.display = "block";

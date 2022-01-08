@@ -208,7 +208,7 @@ input[type="button"]{
 }
 
 .maskBlock {
-    background-color: red;
+    background-color: gray;
     position: absolute;
     left: 0px;
     right: 0px;
