@@ -197,7 +197,7 @@ var showDialog = () => {
     document.querySelector(".dialogContainer").style.display = 'block';
     setTimeout(function selectChanger() {
         document.querySelector("select").value = "Standard";
-    },1000);
+    },750);
 }
 var closeDialog = () => {
     document.querySelector(".maskBlock").style.display = 'none';
